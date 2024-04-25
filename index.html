@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Newsletter sign-up form with success message</title>
+  </head>
+  <body>
+    <main>
+      <div class="illustration">
+        <img src="illustration-sign-up-mobile.svg" alt="" class="mobileImg" />
+        <img src="illustration-sign-up-desktop.svg" alt="" class="desktopImg" />
+      </div>
+      <div class="content">
+        <h1>Stay updated!</h1>
+        <p class="update-info">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul>
+          <li>
+            <p>Product discovery and building what matters</p>
+          </li>
+          <li>
+            <p>Measuring to ensure updates are a success</p>
+          </li>
+          <li>
+            <p>And much more!</p>
+          </li>
+        </ul>
+        <form>
+          <div class="input-wrapper">
+            <label for="email">Email address</label>
+            <p id="error-message">Valid email required</p>
+          </div>
+          <input
+            type="text"
+            id="email"
+            aria-labelledby="email"
+            aria-describedby="error-message"
+            placeholder="email@company.com"
+            class="email-input"
+            name="email"
+            autocomplete="email"
+          />
+          <button type="submit">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+      <div class="confirm">
+        <img src="icon-success.svg" />
+        <h1>Thanks for subscribing!</h1>
+        <p>
+          A confirmation email has been sent to
+          <span>ash@loremcompany.com</span> Please open it and click the button
+          inside to confirm your subscription
+        </p>
+        <button type="submit">Dismiss Message</button>
+      </div>
+    </main>
+    <script src="javaScript.js"></script>
+  </body>
+</html>
